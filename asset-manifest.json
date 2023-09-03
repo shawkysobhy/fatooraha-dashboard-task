@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fatooraha-dashboard-task/static/css/main.a837ba47.css",
-    "main.js": "/fatooraha-dashboard-task/static/js/main.88d39044.js",
+    "main.js": "/fatooraha-dashboard-task/static/js/main.8c09a9eb.js",
     "static/media/personblack.jpg": "/fatooraha-dashboard-task/static/media/personblack.32967cce2749e6ffb242.jpg",
     "static/media/companyLogo.png": "/fatooraha-dashboard-task/static/media/companyLogo.335236e630a8ea1ffaae.png",
     "static/media/userCircle.png": "/fatooraha-dashboard-task/static/media/userCircle.5fe9a7a4904ddba24d9c.png",
@@ -9,10 +9,10 @@
     "static/media/phone.png": "/fatooraha-dashboard-task/static/media/phone.4e5a9e13c448be15138f.png",
     "index.html": "/fatooraha-dashboard-task/index.html",
     "main.a837ba47.css.map": "/fatooraha-dashboard-task/static/css/main.a837ba47.css.map",
-    "main.88d39044.js.map": "/fatooraha-dashboard-task/static/js/main.88d39044.js.map"
+    "main.8c09a9eb.js.map": "/fatooraha-dashboard-task/static/js/main.8c09a9eb.js.map"
   },
   "entrypoints": [
     "static/css/main.a837ba47.css",
-    "static/js/main.88d39044.js"
+    "static/js/main.8c09a9eb.js"
   ]
 }
