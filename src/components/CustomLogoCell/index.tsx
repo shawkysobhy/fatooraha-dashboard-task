@@ -6,7 +6,6 @@ interface CustomLogoCellInterface {
 	sxProps?: {};
 }
 export const CustomLogoCell = ({ logos, sxProps }: CustomLogoCellInterface) => {
-	console.log(logos);
 	return (
 		<CustomTableCell
 			sx={{

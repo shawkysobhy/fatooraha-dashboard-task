@@ -7,7 +7,6 @@ interface CustomAssigneInterface {
 	sxProps?: {};
 }
 export const CustomAssigneCell = ({ logo, sxProps }: CustomAssigneInterface) => {
-	console.log(logo);
 	return (
 		<CustomTableCell
 			sx={{

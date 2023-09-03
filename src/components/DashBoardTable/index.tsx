@@ -7,7 +7,6 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Checkbox } from '@mui/material';
-import { ClientsData } from '../../models';
 import PhoneIcon from '../../assets/phone.png';
 import UserCircle from '../../assets/userCircle.png';
 import {
@@ -68,7 +67,10 @@ export const DashBoardTable = ({ DashboardDataProp }: any) => {
 			component={Paper}
 			sx={{
 				'&::-webkit-scrollbar': {
-					width: 0,
+					maxHeight: '.5rem',
+				},
+				'&::-webkit-scrollbar-thumb': {
+					backgroundColor: '#d9aa8d',
 				},
 			}}>
 			<Table aria-label='simple table' sx={{ borderBottom: 'none' }}>
@@ -148,7 +150,7 @@ export const DashBoardTable = ({ DashboardDataProp }: any) => {
 					</TableRow>
 				</TableHead>
 				<TableBody>
-					{DashboardDataProp.map((row: ClientsData) => (
+					{DashboardDataProp.map((row: any) => (
 						<TableRow key={row.id}>
 							<TableCell sx={styles.checkboxCellStyle}>
 								<Checkbox sx={styles.Checkbox} />

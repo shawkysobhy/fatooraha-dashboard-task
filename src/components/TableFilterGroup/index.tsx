@@ -21,10 +21,10 @@ export const TableFilterGroup = () => {
 				gap: '2rem',
 				overflowX: 'auto',
 				'&::-webkit-scrollbar': {
-					width: '0',
+					maxHeight: '.5rem',
 				},
 				'&::-webkit-scrollbar-thumb': {
-					backgroundColor: 'transparent',
+					backgroundColor: '#df7333',
 				},
 				[theme.breakpoints.down('md')]: {
 					padding: '2rem 0 1rem 0',

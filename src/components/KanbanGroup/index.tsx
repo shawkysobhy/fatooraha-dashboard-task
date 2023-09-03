@@ -11,7 +11,6 @@ export const KanbanGroup = ({
 
 	const handleButtonClick = (label: string) => {
 		setActiveButton(label);
-		console.log(label.toLocaleLowerCase());
 		handleClientsData(label.toLocaleLowerCase());
 	};
 
