@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 import { TableFilterTool } from '../TableFilterTool';
+
 import {
 	SwitchVerticalIcon,
 	UserIcon,
@@ -9,6 +10,7 @@ import {
 	CalendarIcon,
 	Stroke,
 } from '../../assets';
+import { theme } from '../../theme';
 export const TableFilterGroup = () => {
 	return (
 		<Box
@@ -17,6 +19,16 @@ export const TableFilterGroup = () => {
 				margin: '1.19rem auto',
 				height: '1.5rem',
 				gap: '2rem',
+				overflowX: 'auto',
+				'&::-webkit-scrollbar': {
+					width: '0',
+				},
+				'&::-webkit-scrollbar-thumb': {
+					backgroundColor: 'transparent',
+				},
+				[theme.breakpoints.down('md')]: {
+					padding: '2rem 0 1rem 0',
+				},
 			}}>
 			<TableFilterTool txt='This Month'>
 				<CalendarIcon />

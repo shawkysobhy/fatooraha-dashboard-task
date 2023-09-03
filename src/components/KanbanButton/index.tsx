@@ -23,10 +23,11 @@ export const KanbanButton = ({
 				backgroundColor: 'transparent',
 				border: 'none',
 				boxShadow: 'none',
-				margin: '0 18px  ',
-				padding: '0 0 8px 0',
+				minWidth: '73px',
+				padding: '0 0 0 0',
 				color: color,
 				borderRadius: '0',
+
 				borderBottom: '2px solid transparent',
 				borderBottomColor: activeButton === txt ? 'black' : 'transparent',
 				...sx,

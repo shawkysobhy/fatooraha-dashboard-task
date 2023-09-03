@@ -6,7 +6,8 @@
 		"baseUrl": "src",
 		"paths": {
 			"@/*": ["*"],
-			"@assets/*": ["assets/*"] 
+			"@assets/*": ["assets/*"],
+			"theme": ["path/to/your/theme/module"]
 		},
 		"allowJs": true,
 		"skipLibCheck": true,
@@ -22,5 +23,5 @@
 		"noEmit": true,
 		"jsx": "react-jsx"
 	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts"]
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/theme/index.tsx"]
 }

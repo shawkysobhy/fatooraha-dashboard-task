@@ -16,13 +16,13 @@ export const KanbanGroup = ({
 	};
 
 	return (
-		<Box sx={{ borderBottom: '1px solid #333A481A' }}>
+		<Box sx={{ borderBottom: '1px solid #333A481A',display:'flex',gap:'1rem 2rem',flexWrap:'wrap' }}>
 			<KanbanButton
 				handleButtonClick={handleButtonClick}
 				activeButton={activeButton}
 				color='black'
 				txt='All'
-				sx={{ margin: '0 18px 0 0' }}
+				sx={{ margin: '0' }}
 			/>
 			<KanbanButton
 				handleButtonClick={handleButtonClick}

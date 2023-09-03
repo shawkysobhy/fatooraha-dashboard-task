@@ -7,6 +7,7 @@ import {
 import { SearchBar, PaginationGroup } from '../../components';
 import { ClientsData } from '../../mockup';
 import React, { useState } from 'react';
+import { theme } from '../../theme';
 export const DashboardScreen = () => {
 	const [clientsData, setClientsData] = useState(ClientsData);
 	const handleClientsData = (str: string) => {
@@ -19,14 +20,22 @@ export const DashboardScreen = () => {
 		return setClientsData((prev) => filteredData);
 	};
 	return (
-		<Container maxWidth={false} sx={{ padding: '1rem 2rem', margin: '0 auto' }}>
+		<Container
+			maxWidth={false}
+			sx={{
+				padding: '1rem 2rem',
+				margin: '0 auto',
+				[theme.breakpoints.down('md')]: {
+					padding: '1rem',
+				},
+			}}>
 			<Box>
 				<KanbanGroup handleClientsData={handleClientsData} />
 				<SearchBar />
 				<TableFilterGroup />
 				<DashBoardTable DashboardDataProp={clientsData} />
 			</Box>
-			<PaginationGroup/>
+			<PaginationGroup />
 		</Container>
 	);
 };

@@ -7,9 +7,9 @@ export const PaginationGroup = () => {
 		<Box
 			sx={{
 				display: 'flex',
-				width: '100%',
+				width: '90%',
 				justifyContent: 'center',
-				padding: '10px',
+				padding: '10px 0px',
 			}}>
 			<Box sx={{ display: 'flex', gap: '1.25rem', padding: ' 0.625rem' }}>
 				<PaginationButton>
