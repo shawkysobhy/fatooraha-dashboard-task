@@ -21,8 +21,7 @@ export const CustomDateCell = ({ txt }: CustomTableCellInterface) => {
 				lineHeight: '1.25rem',
 				color: '#666F7C',
 				padding: '0rem 0.625rem',
-				borderRight: '1px solid #666f7c33',
-				borderBottom: '1px solid #666f7c33',
+				borderIline: '1px solid #666f7c33',
 				whiteSpace: 'nowrap',
 			}}>
 			{formatDateHandler(txt)}

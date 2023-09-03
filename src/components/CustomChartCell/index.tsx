@@ -31,8 +31,7 @@ export const CustomChartCell = ({
 						? pallette[txt as keyof typeof pallette]['color']
 						: 'white',
 				padding: '0rem 0.625rem',
-				borderRight: '1px solid #666f7c33',
-				borderBottom: '1px solid #666f7c33',
+				borderIline: '1px solid #666f7c33',
 				whiteSpace: 'nowrap',
 				bgcolor:
 					txt && pallette

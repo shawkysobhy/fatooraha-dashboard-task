@@ -1,14 +1,14 @@
-import * as React from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import { Checkbox } from '@mui/material';
-import PhoneIcon from '../../assets/phone.png';
-import UserCircle from '../../assets/userCircle.png';
+import React from 'react';
+import {
+	Table,
+	TableContainer,
+	TableHead,
+	TableRow,
+	TableCell,
+	TableBody,
+	Paper,
+	Checkbox,
+} from '@mui/material';
 import {
 	CustomChartCell,
 	CustomValueCell,
@@ -25,11 +25,12 @@ import {
 	INCOMINGCOLORS,
 	PRIORITYCOLORS,
 } from '../../values/colors';
+import PhoneIcon from '../../assets/phone.png';
+import UserCircle from '../../assets/userCircle.png';
 const styles = {
 	checkboxCellStyle: {
 		m: '0',
-		borderRight: '1px solid #666f7c33',
-		borderBottom: '1px solid #666f7c33',
+		borderIline: '1px solid #666f7c33',
 		maxWidth: '2rem',
 		padding: '0px 10px',
 	},
@@ -79,74 +80,32 @@ export const DashBoardTable = ({ DashboardDataProp }: any) => {
 						<TableCell sx={styles.checkboxCellStyle}>
 							<Checkbox sx={styles.Checkbox} />
 						</TableCell>
-						<CustomTableCell
-							txt='Name'
-							sx={{ minWidth: '12.18rem', ...styles.headCellsStyle }}
-						/>
-						<CustomTableCell
-							txt='Stage'
-							sx={{ minWidth: '6.5rem', ...styles.headCellsStyle }}
-						/>
-						<CustomTableCell
-							txt='Assignee'
-							sx={{ minWidth: '4.32rem', ...styles.headCellsStyle }}
-						/>
-						<CustomTableCell
-							txt='Value'
-							sx={{ minWidth: '6.5rem', ...styles.headCellsStyle }}
-						/>
-						<CustomTableCell
-							txt='Contacts'
-							sx={{ minWidth: '18.75rem', ...styles.headCellsStyle }}
-						/>
-						<CustomTableCell
-							txt='Client'
-							sx={{ minWidth: '10.32rem', ...styles.headCellsStyle }}
-						/>
-						<CustomTableCell
-							txt='Priority'
-							sx={{ minWidth: '6.43rem', ...styles.headCellsStyle }}
-						/>
-						<CustomTableCell
-							txt='Last Activity'
-							sx={{ minWidth: '10rem', ...styles.headCellsStyle }}
-						/>
-						<CustomTableCell
-							txt='Due Date'
-							sx={{ minWidth: '10rem', ...styles.headCellsStyle }}
-						/>
-						<CustomTableCell
-							txt='Note'
-							sx={{ minWidth: '25rem', ...styles.headCellsStyle }}
-						/>
+						<CustomTableCell txt='Name' sx={{ minWidth: '12.18rem' }} />
+						<CustomTableCell txt='Stage' sx={{ minWidth: '6.5rem' }} />
+						<CustomTableCell txt='Assignee' sx={{ minWidth: '4.32rem' }} />
+						<CustomTableCell txt='Value' sx={{ minWidth: '6.5rem' }} />
+						<CustomTableCell txt='Contacts' sx={{ minWidth: '18.75rem' }} />
+						<CustomTableCell txt='Client' sx={{ minWidth: '10.32rem' }} />
+						<CustomTableCell txt='Priority' sx={{ minWidth: '6.43rem' }} />
+						<CustomTableCell txt='Last Activity' sx={{ minWidth: '10rem' }} />
+						<CustomTableCell txt='Due Date' sx={{ minWidth: '10rem' }} />
+						<CustomTableCell txt='Note' sx={{ minWidth: '25rem' }} />
 						<CustomTableCell
 							txt='Opportunity Space'
-							sx={{ minWidth: '10rem', ...styles.headCellsStyle }}
+							sx={{ minWidth: '10rem' }}
 						/>
-						<CustomTableCell
-							txt='Company'
-							sx={{ minWidth: '5rem', ...styles.headCellsStyle }}
-						/>
-						<CustomTableCell
-							txt='Client Date'
-							sx={{ minWidth: '10rem', ...styles.headCellsStyle }}
-						/>
+						<CustomTableCell txt='Company' sx={{ minWidth: '5rem' }} />
+						<CustomTableCell txt='Client Date' sx={{ minWidth: '10rem' }} />
 						<CustomTableCell
 							txt='Incoming/Outgoing'
-							sx={{ minWidth: '10rem', ...styles.headCellsStyle }}
+							sx={{ minWidth: '10rem' }}
 						/>
-						<CustomTableCell
-							txt='Client Budget'
-							sx={{ minWidth: '8.6rem', ...styles.headCellsStyle }}
-						/>
+						<CustomTableCell txt='Client Budget' sx={{ minWidth: '8.6rem' }} />
 						<CustomTableCell
 							txt='Proposal Submission Date'
-							sx={{ minWidth: '12.2rem', ...styles.headCellsStyle }}
+							sx={{ minWidth: '12.2rem' }}
 						/>
-						<CustomTableCell
-							txt='Files'
-							sx={{ minWidth: '10.125rem', ...styles.headCellsStyle }}
-						/>
+						<CustomTableCell txt='Files' sx={{ minWidth: '10.125rem' }} />
 					</TableRow>
 				</TableHead>
 				<TableBody>
@@ -179,7 +138,7 @@ export const DashBoardTable = ({ DashboardDataProp }: any) => {
 							<CustomChartCell txt={row.priority} pallette={PRIORITYCOLORS} />
 							<CustomDateCell txt={row.lastActivity} />
 							<CustomDateCell txt={row.dueDate} />
-							<CustomTableCell txt={row.note} />
+							<CustomTableCell txt={row.note} sx={{ fontWeight: '400' }} />
 							<CustomLogoCell logos={row.opportunitySpace} />
 							<CustomLogoCell logos={[row.company]} />
 							<CustomDateCell txt={row.creationDate} />

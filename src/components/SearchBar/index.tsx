@@ -1,7 +1,7 @@
+import React from 'react';
 import { TextField } from '@mui/material';
 import InputAdornment from '@mui/material/InputAdornment';
 import { SearchRefraction } from '../../assets';
-import React from 'react';
 
 export const SearchBar = () => {
 	return (

@@ -1,21 +1,31 @@
 import { Box } from '@mui/material';
 import { KanbanButton } from '../KanbanButton';
 import { useState } from 'react';
+import { STAGECOLORS } from '../../values/colors';
 import React from 'react';
-export const KanbanGroup = ({
-	handleClientsData,
-}: {
+import { theme } from '../../theme';
+interface KanbanGroupInterface {
 	handleClientsData: Function;
-}) => {
+}
+const styles = {
+	container: {
+		borderBottom: '1px solid #333A481A',
+		display: 'flex',
+		gap: '1rem 2rem',
+		flexWrap: 'wrap',
+		[theme.breakpoints.down('sm')]: {
+			justifyContent: 'center',
+		},
+	},
+};
+export const KanbanGroup = ({ handleClientsData }: KanbanGroupInterface) => {
 	const [activeButton, setActiveButton] = useState('All');
-
 	const handleButtonClick = (label: string) => {
 		setActiveButton(label);
 		handleClientsData(label.toLocaleLowerCase());
 	};
-
 	return (
-		<Box sx={{ borderBottom: '1px solid #333A481A',display:'flex',gap:'1rem 2rem',flexWrap:'wrap' }}>
+		<Box sx={styles.container}>
 			<KanbanButton
 				handleButtonClick={handleButtonClick}
 				activeButton={activeButton}
@@ -26,31 +36,31 @@ export const KanbanGroup = ({
 			<KanbanButton
 				handleButtonClick={handleButtonClick}
 				activeButton={activeButton}
-				color='#6E8BEE'
+				color={STAGECOLORS.discovery.bgcolor}
 				txt='Discovery'
 			/>
 			<KanbanButton
 				handleButtonClick={handleButtonClick}
 				activeButton={activeButton}
-				color='#3CBB6F'
+				color={STAGECOLORS.proposal.bgcolor}
 				txt='Proposal'
 			/>
 			<KanbanButton
 				handleButtonClick={handleButtonClick}
 				activeButton={activeButton}
-				color='#C379DD'
+				color={STAGECOLORS.negotiation.bgcolor}
 				txt='Negotiation'
 			/>
 			<KanbanButton
 				activeButton={activeButton}
 				handleButtonClick={handleButtonClick}
-				color='#D75100'
+				color={STAGECOLORS.won.bgcolor}
 				txt='Won'
 			/>
 			<KanbanButton
 				activeButton={activeButton}
 				handleButtonClick={handleButtonClick}
-				color='#D76A6A'
+				color={STAGECOLORS.lost.bgcolor}
 				txt='Lost'
 			/>
 		</Box>

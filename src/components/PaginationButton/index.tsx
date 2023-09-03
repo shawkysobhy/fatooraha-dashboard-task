@@ -15,9 +15,8 @@ export const PaginationButton = ({
 			sx={{
 				cursor: 'pointer',
 				display: 'flex',
-				width: '1.5rem',
-				height: '1.5rem',
-				padding: ' 0.30469rem 0.2344rem 0.32031rem 0.2344rem',
+				width: '1.6rem',
+				height: '1.6rem',
 				justifyContent: 'center',
 				alignItems: 'center',
 				borderRadius: '0.375rem',

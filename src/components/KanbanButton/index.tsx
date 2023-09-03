@@ -7,7 +7,21 @@ interface KanbanButtonInterface {
 	activeButton: string;
 	sx?: Object;
 }
-
+const styles = {
+	button: {
+		backgroundColor: 'transparent',
+		border: 'none',
+		boxShadow: 'none',
+		minWidth: '73px',
+		padding: '0',
+		borderRadius: '0',
+		borderBottom: '2px solid transparent',
+		'&:hover': {
+			backgroundColor: 'transparent',
+			boxShadow: 'none',
+		},
+	},
+};
 export const KanbanButton = ({
 	color,
 	txt,
@@ -19,24 +33,13 @@ export const KanbanButton = ({
 		<Button
 			variant='text'
 			disableRipple
+			disableFocusRipple
 			sx={{
-				backgroundColor: 'transparent',
-				border: 'none',
-				boxShadow: 'none',
-				minWidth: '73px',
-				padding: '0 0 0 0',
+				...styles.button,
 				color: color,
-				borderRadius: '0',
-
-				borderBottom: '2px solid transparent',
 				borderBottomColor: activeButton === txt ? 'black' : 'transparent',
 				...sx,
-				'&:hover': {
-					backgroundColor: 'transparent', // Remove background color change on hover
-					boxShadow: 'none',
-				},
 			}}
-			disableFocusRipple
 			onClick={() => {
 				handleButtonClick(txt);
 			}}>

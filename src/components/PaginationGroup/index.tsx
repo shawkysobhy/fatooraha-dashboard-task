@@ -11,7 +11,7 @@ export const PaginationGroup = () => {
 				justifyContent: 'center',
 				padding: '10px 0px',
 			}}>
-			<Box sx={{ display: 'flex', gap: '1.25rem', padding: ' 0.625rem' }}>
+			<Box sx={{ display: 'flex', gap: '1.25rem' }}>
 				<PaginationButton>
 					<PaginationLeftIcon />
 				</PaginationButton>

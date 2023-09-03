@@ -6,16 +6,13 @@ interface Name {
 	userName: string;
 	notification: number;
 }
-
 interface CustomTableCellInterface {
 	txt: Name;
 	sx?: Object;
 }
-
 const capitalizeFirstLetter = (string: string): string => {
 	return string.charAt(0).toUpperCase() + string.slice(1);
 };
-
 export const NameTableCell = ({ txt, sx }: CustomTableCellInterface) => {
 	return (
 		<TableCell

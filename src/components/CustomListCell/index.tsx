@@ -14,15 +14,12 @@ function capitalizeWords(inputString: string): string {
 		.map((word) => capitalizeFirstLetter(word))
 		.join(' ');
 }
-
 function capitalizeFirstLetter(word: string): string {
 	if (word.length === 0) {
-		return word; // Return an empty string if the word is empty
+		return word; 
 	}
-
 	const firstLetter = word[0].toUpperCase();
 	const restOfString = word.slice(1);
-
 	return firstLetter + restOfString;
 }
 
