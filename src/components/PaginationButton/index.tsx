@@ -13,6 +13,7 @@ export const PaginationButton = ({
 	return (
 		<Box
 			sx={{
+				cursor: 'pointer',
 				display: 'flex',
 				width: '1.5rem',
 				height: '1.5rem',
