@@ -1,7 +1,10 @@
 
-# [Live ](https://shawkysobhy.github.io/fatooraha-dashboard-task/)
+# The dashboard demo task was part of the assignment for the intern position.
 
-# Getting Started with Create React App
+
+## [Live ](https://shawkysobhy.github.io/fatooraha-dashboard-task/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
